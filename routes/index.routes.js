@@ -18,11 +18,11 @@ res.render('index', {user: req.session.currentUser});
 
 
 router.get('/private', requireLogin, (req, res) => { 
-  res.render('private');
+  res.render('private/private');
 })
 
 router.get('/main', requireLogin, (req, res) => { 
-  res.render('main');
+  res.render('private/main');
 })
 
 module.exports = router;
